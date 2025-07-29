@@ -1,0 +1,22 @@
+{
+  "author": "TuXunJia",
+  "name": "@yf-bigdata/vue3-ui",
+  "version": "1.0.3",
+  "description": "Vue3组件库",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": ["lib","es"],
+  "types": "lib/src/index.d.ts",
+  "scripts": {
+    "release": "release-it",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "sideEffects": ["**/*.css"],
+  "keywords": ["Vue3组件库", "益丰大药房"],
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fantastic9499/yf-bigdata-vue3-ui"
+  }
+}

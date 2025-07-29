@@ -1,0 +1,38 @@
+{
+  "name": "bigdata-vue3-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:vue3-ui": "gulp -f packages/components/script/build/index.ts",
+    "release:vue3-ui": "gulp -f packages/components/script/publish/index.ts",
+    "docs:dev": "pnpm --filter site docs:dev",
+    "docs:preview": "pnpm --filter site docs:preview",
+    "docs:build": "pnpm --filter site docs:build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.17",
+    "@types/gulp-autoprefixer": "^0.0.37",
+    "@types/gulp-less": "^0.0.36",
+    "@types/node": "^24.1.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/runtime-core": "^3.5.18",
+    "gulp": "^5.0.1",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-less": "^5.0.0",
+    "less": "^4.4.0",
+    "release-it": "^19.0.4",
+    "sucrase": "^3.35.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.6",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}
