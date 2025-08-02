@@ -1,0 +1,36 @@
+.column_container {
+  max-height: 60vh;
+  overflow: auto;
+}
+.column_container .customColumnMain {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dddddd;
+  flex-shrink: 0;
+  cursor: move;
+}
+.column_container .customColumnMain .column {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.column_container .customColumnMain .column .index {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 13px;
+}
+.column_container .customColumnMain .column .switch {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.column_container .customColumnMain .column .icon {
+  color: #999;
+  margin-right: 10px;
+}

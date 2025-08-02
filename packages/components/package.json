@@ -2,8 +2,8 @@
   "name": "@yf-bigdata/vue3-ui",
   "version": "1.0.0",
   "description": "Vue3组件库",
-  "type": "module",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "build:vue3-ui": "gulp -f ./script/build/index.ts",
@@ -12,5 +12,19 @@
   "keywords": [],
   "author": "TuXunJia",
   "license": "ISC",
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@10.12.1",
+  "peerDependencies": {
+    "ant-design-vue": "^3.2.20"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "less": "^4.4.0",
+    "unplugin-auto-import": "^19.3.0",
+    "unplugin-vue-components": "^28.8.0",
+    "vue-draggable-plus": "^0.6.0"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "lodash-es": "^4.17.21"
+  }
 }

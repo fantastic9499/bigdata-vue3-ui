@@ -1,0 +1,5 @@
+.bd-box {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}

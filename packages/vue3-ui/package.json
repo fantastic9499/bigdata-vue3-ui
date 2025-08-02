@@ -1,12 +1,12 @@
 {
   "author": "TuXunJia",
   "name": "@yf-bigdata/vue3-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Vue3组件库",
   "main": "lib/index.js",
   "module": "es/index.mjs",
   "files": ["lib","es"],
-  "types": "lib/src/index.d.ts",
+  "types": "lib/index.d.ts",
   "scripts": {
     "release": "release-it",
     "test": "echo \"Error: no test specified\" && exit 1"
