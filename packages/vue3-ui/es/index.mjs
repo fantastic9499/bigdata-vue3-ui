@@ -1,8 +1,8 @@
 import { defineComponent as jt, computed as Tt, createElementBlock as nn, openBlock as pt, normalizeClass as Oo, renderSlot as xo, inject as Eo, ref as Me, h as rn, getCurrentInstance as Dt, nextTick as mn, reactive as Dr, createVNode as Ce, toRefs as Ao, unref as z, watch as jo, onMounted as Do, onUnmounted as Po, isRef as kt, resolveComponent as An, createBlock as Io, normalizeProps as Mo, guardReactiveProps as $o, withCtx as jn, Fragment as No, renderList as ko, createElementVNode as Ft, toDisplayString as Dn } from "vue";
 import "./src/button/style/index.css";
 import { Switch as Fo, Modal as Ro } from "ant-design-vue";
-import "ant-design-vue/es/modal/style";
-import "ant-design-vue/es/switch/style";
+import "ant-design-vue/es/modal/style/index.d.ts";
+import "ant-design-vue/es/switch/style/index.d.ts";
 import "./src/table-settings-modal/style/index.css";
 const Pr = (e) => (e.install = (n) => {
   const t = e.name;

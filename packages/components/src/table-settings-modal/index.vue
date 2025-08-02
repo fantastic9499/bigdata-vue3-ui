@@ -2,7 +2,7 @@
  * @Author: TuXunJia
  * @Date: 2025-07-30 17:23:46
  * @LastEditors: TuXunJia
- * @LastEditTime: 2025-08-01 08:41:31
+ * @LastEditTime: 2025-08-02 20:59:49
  * @Description: 表格字段设置Modal，基于ant-design-vue封装
 -->
 <template>
@@ -27,36 +27,40 @@ import { Modal, ModalProps, Switch } from 'ant-design-vue';
 // import Modal from 'ant-design-vue/es/modal';
 // import Switch from 'ant-design-vue/es/switch';
 
-import 'ant-design-vue/es/modal/style';
-import 'ant-design-vue/es/switch/style';
+import 'ant-design-vue/es/modal/style/index.d.ts';
+import 'ant-design-vue/es/switch/style/index.d.ts';
 import { cloneDeep } from 'lodash-es';
 import { computed, ref } from 'vue';
 import { VueDraggable } from 'vue-draggable-plus';
 import './style/index.less';
 
-export interface ITableSettingsModalProps { }
+export interface ITableSettingsModalProps {}
 
 defineOptions({
   name: 'TableSettingsModal',
-  components: { 'a-modal': Modal, 'a-switch': Switch }
+  components: { 'a-modal': Modal, 'a-switch': Switch },
 });
 
 const props = defineProps<ITableSettingsModalProps>();
 const emit = defineEmits(['change']);
 
 const visible = ref(false);
-const showModal = (cols: Array<{
-  title: string;
-  isShow: boolean;
-}>) => {
+const showModal = (
+  cols: Array<{
+    title: string;
+    isShow: boolean;
+  }>
+) => {
   columns.value = cloneDeep(cols);
   visible.value = true;
 };
 
-const columns = ref<Array<{
-  title: string;
-  isShow: boolean;
-}>>([]);
+const columns = ref<
+  Array<{
+    title: string;
+    isShow: boolean;
+  }>
+>([]);
 
 const modalProps = computed<ModalProps>(() => {
   return {
@@ -64,12 +68,12 @@ const modalProps = computed<ModalProps>(() => {
     visible: visible.value,
     width: '520px',
     bodyStyle: { minHeight: '450px' },
-    onCancel: () => visible.value = false,
+    onCancel: () => (visible.value = false),
     onOk: () => {
       emit('change', cloneDeep(columns.value));
       visible.value = false;
-    }
-  }
+    },
+  };
 });
 
 defineExpose({

@@ -1,7 +1,7 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Documentation site for @yf-bigdata/vue3-ui",
   "main": "index.js",
   "type": "module",
   "scripts": {
